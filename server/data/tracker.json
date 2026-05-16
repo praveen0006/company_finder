@@ -1,1 +1,167 @@
-[]
+[
+  {
+    "id": "001",
+    "date": "2026-04-29",
+    "company": "Vapi",
+    "role": "Agent Strategist - SF",
+    "score": "1.5/5",
+    "status": "SKIP",
+    "pdf": false,
+    "report": "[001](reports/001-vapi-2026-04-29.md)",
+    "notes": "Requires 5+ yrs CS experience (Hard Blocker)"
+  },
+  {
+    "id": "002",
+    "date": "2026-04-29",
+    "company": "Vapi",
+    "role": "Agent Engineer",
+    "score": "2.0/5",
+    "status": "SKIP",
+    "pdf": false,
+    "report": "[002](reports/002-vapi-2026-04-29.md)",
+    "notes": "Strong Python/API but requires 5+ yrs pre-sales/LLMs"
+  },
+  {
+    "id": "003",
+    "date": "2026-04-29",
+    "company": "PolyAI",
+    "role": "Agent Designer",
+    "score": "4.0/5",
+    "status": "Evaluada",
+    "pdf": true,
+    "report": "[003](reports/003-polyai-2026-04-29.md)",
+    "notes": "New grads welcome! Good match for Python/ML, requires conversational UI pivot"
+  },
+  {
+    "id": "004",
+    "date": "2026-04-29",
+    "company": "PolyAI",
+    "role": "Forward Deployed AI Engineer",
+    "score": "1.5/5",
+    "status": "SKIP",
+    "pdf": false,
+    "report": "[004](reports/004-polyai-2026-04-29.md)",
+    "notes": "Requires 2-5 yrs client-facing & PST timezone"
+  },
+  {
+    "id": "005",
+    "date": "2026-04-29",
+    "company": "Intercom",
+    "role": "AI Infrastructure Engineer",
+    "score": "1.0/5",
+    "status": "SKIP",
+    "pdf": false,
+    "report": "[005](reports/005-intercom-2026-04-29.md)",
+    "notes": "Requires 5+ yrs CUDA/Triton GPU scaling"
+  },
+  {
+    "id": "006",
+    "date": "2026-05-16",
+    "company": "Soothsayer",
+    "role": "Junior AI Engineer",
+    "score": "4.2/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[006](reports/006-soothsayer-2026-05-16.md)",
+    "notes": "Patent-holder profile is a massive differentiator for this junior role."
+  },
+  {
+    "id": "007",
+    "date": "2026-05-16",
+    "company": "Aganitha",
+    "role": "Jr Management Trainee",
+    "score": "4.1/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[007](reports/007-aganitha-2026-05-16.md)",
+    "notes": "High-impact research focus matches your IEEE/Publication background."
+  },
+  {
+    "id": "008",
+    "date": "2026-05-16",
+    "company": "360DigiTMG",
+    "role": "AI Agent Engineer",
+    "score": "4.3/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[008](reports/008-360digitmg-2026-05-16.md)",
+    "notes": "\"AI Agent\" focus is a direct match for your Smart Crop Guard project logic."
+  },
+  {
+    "id": "009",
+    "date": "2026-05-16",
+    "company": "Perfex",
+    "role": "Jr Python Developer",
+    "score": "3.8/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[009](reports/009-perfex-2026-05-16.md)",
+    "notes": "Solid Python/ML role, good for entry-level engineering."
+  },
+  {
+    "id": "010",
+    "date": "2026-05-16",
+    "company": "Micro1",
+    "role": "Junior AI Engineer",
+    "score": "4.4/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[010](reports/010-micro1-2026-05-16.md)",
+    "notes": "High-tier global platform. Your patent is a huge selling point here."
+  },
+  {
+    "id": "011",
+    "date": "2026-05-16",
+    "company": "Virtue",
+    "role": "Python Developer",
+    "score": "3.9/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[011](reports/011-virtue-2026-05-16.md)",
+    "notes": "Secure AI focus aligns with your safety-critical Railway AI background."
+  },
+  {
+    "id": "012",
+    "date": "2026-05-16",
+    "company": "ValGenesis",
+    "role": "Jr AI/ML Engineer",
+    "score": "4.5/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[012](reports/012-valgenesis-2026-05-16.md)",
+    "notes": "High-value Life Sciences role. Bonus React skills match your current projects."
+  },
+  {
+    "id": "013",
+    "date": "2026-05-16",
+    "company": "Versatile",
+    "role": "Data Scientist",
+    "score": "3.5/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[013](reports/013-versatile-2026-05-16.md)",
+    "notes": "Mid-level role, but your research depth makes you a strong contender."
+  },
+  {
+    "id": "014",
+    "date": "2026-05-16",
+    "company": "Innotechwise",
+    "role": "Jr AI Engineer",
+    "score": "4.2/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[014](reports/014-innotechwise-2026-05-16.md)",
+    "notes": "Modern AI-native testing/content focus. Great for WFH/Remote."
+  },
+  {
+    "id": "015",
+    "date": "2026-05-16",
+    "company": "AutomatonsX",
+    "role": "Jr AI Engineer",
+    "score": "4.8/5",
+    "status": "Aplicada",
+    "pdf": true,
+    "report": "[015](reports/015-automatonsx-2026-05-16.md)",
+    "notes": "**High Value.** LangGraph/RAG focus is a perfect match for your skills."
+  }
+]

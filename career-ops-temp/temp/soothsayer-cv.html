@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveen Kumar — Junior AI Engineer CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; font-size: 11px; line-height: 1.5; color: #1a1a2e; background: #ffffff; }
+  .page { width: 100%; max-width: 800px; margin: 0 auto; padding: 30px; }
+  .header { margin-bottom: 20px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, #007c91, #6a1b9a); margin-bottom: 10px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 10.5px; color: #555; }
+  .section { margin-bottom: 18px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; color: #007c91; border-bottom: 1.5px solid #e2e2e2; padding-bottom: 4px; margin-bottom: 10px; }
+  .summary-text { font-size: 11px; line-height: 1.7; color: #2f2f2f; }
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .competency-tag { font-size: 10px; font-weight: 500; color: #004d40; background: #e0f2f1; padding: 4px 10px; border-radius: 3px; border: 1px solid #b2dfdb; }
+  .job, .project, .edu-item { margin-bottom: 12px; break-inside: avoid; }
+  .job-header, .edu-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+  .job-company, .project-title, .edu-org { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; color: #6a1b9a; }
+  .job-period, .edu-year { font-size: 10.5px; color: #777; }
+  .job-role, .edu-title { font-size: 11px; font-weight: 600; color: #333; }
+  .job ul { padding-left: 18px; margin-top: 6px; }
+  .job li { font-size: 10.5px; line-height: 1.6; color: #333; margin-bottom: 4px; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .skill-category { font-weight: 600; color: #333; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>Praveen Kumar</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>praveen19121@gmail.com</span>
+      <span>|</span>
+      <span>+91-86393-22024</span>
+      <span>|</span>
+      <span>linkedin.com/in/praveen-kumar-akula-30a685255</span>
+      <span>|</span>
+      <span>github.com/praveen0006</span>
+      <span>|</span>
+      <span>Hyderabad, India</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Patent-published AI and Machine Vision Engineer specializing in real-time inspection and monitoring systems. Expert in deploying YOLOv8 and EfficientNet models on edge devices (Raspberry Pi) with sub-200ms latency. Proven track record of building end-to-end AI pipelines—from sensor fusion (LiDAR, Thermal, Ultrasonic) to cloud integration. Passionate about applying Computer Vision and Generative AI to solve complex industrial challenges.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Real-Time Object Detection</span>
+      <span class="competency-tag">Edge AI Deployment</span>
+      <span class="competency-tag">Sensor Fusion (LiDAR/Thermal)</span>
+      <span class="competency-tag">Embedded Systems</span>
+      <span class="competency-tag">End-to-End AI Pipelines</span>
+      <span class="competency-tag">Predictive Maintenance</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+    
+    <div class="project">
+      <div class="project-title">Railway AI Research (Patent Published)</div>
+      <div class="project-desc">Designed an AI-enabled wheel inspection system using machine vision and sensor fusion (LiDAR, thermal, ultrasonic). Built the microcontroller-based real-time diagnostic and IoT monitoring system for predictive maintenance.</div>
+      <div class="project-tech">Tech: Python, LiDAR, Thermal/Ultrasonic Sensors, IoT</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Smart Crop Guard — Real-Time Edge AI Monitoring System</div>
+      <div class="project-desc">Developed an embedded vision system using YOLOv8 achieving sub-200 ms inference latency on edge devices. Managed full pipeline: dataset preparation, model training, and edge deployment with Twilio API alerts.</div>
+      <div class="project-tech">Tech: YOLOv8, Raspberry Pi, Python, Twilio API</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">AI-Powered Smart Irrigation System</div>
+      <div class="project-desc">Developed EfficientNet-B0 model (90%+ accuracy) for crop-stage classification. Built a real-time inference pipeline on Raspberry Pi integrating camera and soil moisture sensors for offline decision logic.</div>
+      <div class="project-tech">Tech: EfficientNet, TensorFlow, Raspberry Pi</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Patented Dual-Axis Solar Tracking System</div>
+      <div class="project-desc">Designed a solar tracking system using LDR sensors. Developed motor control algorithms reducing alignment error by 25% and increasing energy capture by 40%. Optimized for rooftop deployment (TRL-4).</div>
+      <div class="project-tech">Tech: Control Algorithms, Microcontrollers, LDR Sensors</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-category">Machine Learning:</span> PyTorch, TensorFlow, Scikit-learn, YOLOv8, EfficientNet</div>
+      <div class="skill-item"><span class="skill-category">Computer Vision:</span> OpenCV, Object Detection, Image Processing, Sensor Fusion</div>
+      <div class="skill-item"><span class="skill-category">Edge & Embedded:</span> Raspberry Pi, Arduino, ESP32, Real-Time Inference</div>
+      <div class="skill-item"><span class="skill-category">Tools & Languages:</span> Python, Java, SQL, Git, Linux, MLOps Basics, Prompt Engineering</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-org">Woxsen University, Hyderabad</div>
+        <div class="edu-year">2022 – 2026</div>
+      </div>
+      <div class="edu-title">Bachelor of Technology in Computer Science (AI & ML)</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Achievements & Publications</div>
+    <div class="summary-text" style="font-size: 10px;">
+      • **Patent Published** – Wheel Condition Assessment Device (2025) <br>
+      • **Patent Granted** – Sun Tracking Solar Panel System <br>
+      • **IEEE Publication** – Smart Crop Guard: AI-Enabled Wildlife Deterrence System <br>
+      • **Book Chapter** – IoT Applications in Communications (Taylor & Francis)
+    </div>
+  </div>
+</div>
+</body>
+</html>

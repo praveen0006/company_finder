@@ -7,6 +7,8 @@ import { ResearcherAgent } from './agents/ResearcherAgent'
 import { AnalystAgent } from './agents/AnalystAgent'
 import { MatchmakerAgent } from './agents/MatchmakerAgent'
 import { ResumeAgent } from './agents/ResumeAgent'
+import { JobScoutAgent } from './agents/JobScoutAgent'
+import { JobEvaluationAgent } from './agents/JobEvaluationAgent'
 import { generatePdfFromHtml } from './utils/pdf'
 import { trackerRouter } from './routes/tracker'
 
@@ -23,8 +25,10 @@ const researcher = new ResearcherAgent()
 const analyst = new AnalystAgent()
 const matchmaker = new MatchmakerAgent()
 const resumeAgent = new ResumeAgent()
+const jobScout = new JobScoutAgent()
+const jobEval = new JobEvaluationAgent()
 
-// ─── Route ────────────────────────────────────────────────────────────────────
+// ─── Scout Route (Company Research) ───────────────────────────────────────────
 app.post('/api/scout', async (req: Request, res: Response): Promise<void> => {
   const { skills, domain, location, count } = req.body
 
@@ -59,6 +63,30 @@ app.post('/api/scout', async (req: Request, res: Response): Promise<void> => {
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error'
     console.error('❌ Error:', message)
+    res.status(500).json({ error: message })
+  }
+})
+
+// ─── Job Scout & Evaluate Route ────────────────────────────────────────────────
+app.post('/api/jobs/evaluate', async (req: Request, res: Response): Promise<void> => {
+  const { url, candidateProfile } = req.body
+
+  if (!url) {
+    res.status(400).json({ error: 'url is required' })
+    return
+  }
+
+  try {
+    // Step 1: Extract Job Details
+    const jobDetails = await jobScout.runFromUrl(url)
+    
+    // Step 2: Evaluate
+    const evaluation = await jobEval.run(candidateProfile, jobDetails)
+
+    res.json({ jobDetails, evaluation })
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Unknown error'
+    console.error('❌ Job Evaluation Error:', message)
     res.status(500).json({ error: message })
   }
 })

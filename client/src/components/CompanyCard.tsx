@@ -48,7 +48,7 @@ export function CompanyCard({ company, index }: CompanyCardProps) {
   const handleSave = async () => {
     setSaving(true)
     try {
-      await fetch(\`\${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/tracker\`, {
+      await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/tracker`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ company })
@@ -64,7 +64,7 @@ export function CompanyCard({ company, index }: CompanyCardProps) {
   const handleGeneratePdf = async () => {
     setGenerating(true)
     try {
-      const res = await fetch(\`\${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/resume\`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/resume`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -81,7 +81,7 @@ export function CompanyCard({ company, index }: CompanyCardProps) {
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = \`\${company.company.replace(/\\s+/g, '_')}_Resume.pdf\`
+      a.download = `${company.company.replace(/\s+/g, '_')}_Resume.pdf`
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
