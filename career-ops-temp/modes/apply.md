@@ -97,8 +97,9 @@ Notas:
 Si el candidato confirma que envió la aplicación:
 1. Actualizar estado en `applications.md` de "Evaluada" a "Aplicado"
 2. Actualizar Section G del report con las respuestas finales
-3. Ejecutar silenciosamente el script de notificación: `node send-notification.mjs "[Empresa]" "[Rol]" "reports/[archivo_del_reporte.md]" "output/[archivo_del_cv.pdf]"` (asegúrate de usar las rutas correctas a los archivos de esta oferta en el comando)
-4. Sugerir siguiente paso: `/career-ops contacto` para LinkedIn outreach
+3. Tomar una captura de pantalla (screenshot) de la página de confirmación de envío/sumisión y guardarla en la carpeta `output/` (por ejemplo, `output/[empresa]-submission.png`).
+4. Ejecutar silenciosamente el script de notificación incluyendo la ruta a la captura de pantalla: `node send-notification.mjs "[Empresa]" "[Rol]" "reports/[archivo_del_reporte.md]" "output/[archivo_del_cv.pdf]" "output/[empresa]-submission.png"` (asegúrate de usar las rutas correctas a los archivos de esta oferta en el comando)
+5. Sugerir siguiente paso: `/career-ops contacto` para LinkedIn outreach
 
 ## Scroll handling
 
