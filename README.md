@@ -16,6 +16,7 @@ An AI-powered application for autonomous company research, job discovery, and au
 - **Job Scout & Evaluate**: Provide a job URL (LinkedIn/Naukri), and the agent extracts JD details and scores the opportunity.
 - **Application Tracker**: Manage your pipeline with a premium React dashboard that tracks status from "Evaluated" to "Offer".
 - **Tailor ATS Resume**: Generate premium, branded PDF resumes tailored to a specific JD with a single click.
+- **Screenshot & Email Automation**: Automatically captures a submission confirmation screenshot once applied and dispatches a visually stunning HSL-themed HTML email to your inbox featuring the matching score, detailed evaluation report, resume name, and inline embedded screenshot.
 
 ### 📝 Resume Intelligence
 - **Patent-Centric Strategy**: Automatically highlights high-impact assets like patents and IEEE publications.
